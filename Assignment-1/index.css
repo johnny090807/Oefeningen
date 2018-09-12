@@ -1,0 +1,201 @@
+	/***********
+
+	This stylesheet is written in BEM
+
+	Block = .block
+	Element = .block__element
+	Modifier = .block__element--modifier
+
+	***********/
+
+	/* Blocks ***********************************************************/
+
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+
+	.nav{
+		display: flex;
+		margin: 0;
+		padding: 0;
+		background-color: #d3d3d3;
+	}
+	.list{
+		padding-left: 0;
+		height: 100%;
+		width: 100%;
+		display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-flex-flow: row nowrap;
+	    -moz-flex-flow: row nowrap;
+	    -ms-flex-flow: row none;
+	    flex-flow: row nowrap;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    -moz-justify-content: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	}
+	.main{
+		display: grid;
+		text-align: center; 
+		width:100%;
+		height: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.introduction{
+		text-align:center;
+		margin: 50px;
+
+	}
+	.container{
+		background-color: lightgrey;
+		margin: 50px;
+		padding: 20px;
+	}
+	.form{
+		display: grid;
+		margin: 50px;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 20% 20% 20%;
+		padding-bottom: 40px;
+	}
+	.footer{
+		height: 40px;
+		background-color: #464646;
+	}
+
+	/* Elements *********************************************************/
+
+	.list__item{
+		background-color: #d3d3d3;
+		margin: 0;
+		padding: 10px;
+		border: none;
+		height: 100%;
+		justify-content: center;
+  		font-weight: bold;
+		text-decoration: none; 
+		color: black;
+	}
+	.list__item:hover{
+		background-color: grey; 
+	}
+
+	.main__text{
+		color: white;
+		padding-bottom: 100px;
+	}
+
+	.main__hexagon{
+		padding-top: 100px;
+		height: 50px;
+	}
+
+	.introduction__grid{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	.container__text{
+		text-align: center;
+	}
+	.container__image{
+		display: grid;
+		margin-top: 0;
+		margin-bottom: 0;
+		background-color: lightgrey;
+		height: 300px;
+	}
+	.container__imageselector{
+		background-color: white;
+		margin-bottom: 10px;
+		margin-left: 80%;
+	}
+	.container__imageselector:hover{
+		background-color: grey;
+	}
+	
+	.form__text{
+		text-align: center;
+	}
+
+	.form_input{
+		margin: 10px;
+	}
+	.form__submit{
+		grid-column: 2;
+		grid-row: 5;
+		margin-left:70%;
+		text-decoration: none;
+		border: none;
+		background-color: #BFBFBF;
+		color: white;
+
+	}
+	.form__text{
+		white-space: nowrap;
+	}
+	.form_radio{
+		background-color: white;
+		text-align: left;
+	}
+	.form__input{
+		background-color: #BFBFBF;
+		margin:10px;
+		border: none;
+		color: white;
+	}
+
+	/* Modifiers ********************************************************/
+
+	.main--darkgrey{
+		background-color: #464646;
+	}
+	.main--grey{
+		background-color: #8B8B8B;
+	}
+	.main--lightgrey{
+		background-color: #BFBFBF;
+	}
+	.introduction__griditem--bottomright, .introduction__griditem--bottomleft, .introduction__griditem--topleft, .introduction__griditem--topright{
+		padding: 20px;
+	}
+	.introduction__griditem--bottomright{
+		text-align: left; 
+	}
+	.form__input--topright{
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.form__input--midright{
+		grid-column: 2;
+		grid-row: 2;
+	}
+	.form__input--bottomright{
+		grid-column: 2;
+		grid-row: 3;
+	}
+	.form__input--topleft{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.form__input--midleft{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.form__input--bottomleft{
+		grid-column: 1;
+		grid-row: 3/7;
+	}
+	.form__input--radio{
+		grid-column: 2;
+		grid-row: 4;
+		text-align: left;
+		margin-left: 10%;
+	}
