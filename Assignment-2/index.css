@@ -11,6 +11,9 @@
 	/* Blocks ***********************************************************/
 
 	body{
+		position: absolute;
+		width: calc(100% - 150px);
+		left: 75px;
 		margin: 0;
 		padding: 0;
 		font-family: Arial, Helvetica, sans-serif;
@@ -19,5 +22,23 @@
 
 
 	/* Elements *********************************************************/
-	/* Modifiers ********************************************************/
 	
+	.nav__item{
+	    text-decoration: none;
+	    color: black;
+	    cursor: pointer;
+	}
+	.nav__rightnav{
+
+		float: right;
+	}
+
+	/* Modifiers ********************************************************/
+
+	.nav__item--right{
+		float: left;
+		padding-left: 10px;
+	}
+	.nav__item--left{
+		float: left;
+	}
