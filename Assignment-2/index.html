@@ -7,15 +7,96 @@
 <body>
 <header class="header">
 	<nav class="nav">
-		<a href="index.html" class="nav__item nav__item--left"><h2>The Explorer</h2></a>
-		<div class="nav__rightnav">
-			<a href="#1" class="nav__item nav__item--right"><h5>exploration</h5></a>
-			<a href="#2" class="nav__item nav__item--right"><h5>community</h5></a>
-			<a href="#3" class="nav__item nav__item--right"><h5>about us</h5></a>
-			<a href="#4" class="nav__item nav__item--right"><h5>contact us</h5></a>
+		
+		<img class="nav__images" src="images/1.jpg" style="width:100%">
+		<img class="nav__images" src="images/2.jpg" style="width:100%">
+		<img class="nav__images" src="images/3.jpg" style="width:100%">
+		<img class="nav__images" src="images/4.jpg" style="width:100%">
+
+		<button class="nav__button--left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="nav__button--right" onclick="plusDivs(1)">&#10095;</button>
 		</div>
-		<div class="nav__"></div>
+			<a href="index.html" class="nav__item nav__item--left"><h2>The Explorer</h2></a>
+			<div class="nav__content nav__item--content"><h5 >LATEST NEWS</h5>
+				<h2>Life is an experiment in which you may fail or succeed. Explore more, expect less.</h2>
+			</div>
+			<div class="nav__items">
+				<a href="#1" class="nav__item--right"><h5>exploration</h5></a>
+				<a href="#2" class="nav__item--right"><h5>community</h5></a>
+				<a href="#3" class="nav__item--right"><h5>about us</h5></a>
+				<a href="#4" class="nav__item--right"><h5>contact us</h5></a>
+			</div>
 	</nav>
 </header>
+
+	<div class="main">
+		<h2 class="main__text">Recent Explorations</h2>
+
+		<h5 class="main__text">Check out what our Explorers are doing and join them as they explore the world</h5></h2>
+	</div>
+
+	<div class="content__flex">
+		<img class="content__image--flex" src="images/5.jpg">
+		<div class="content__text">
+				<p class="content__text--caption">WINTER</p>
+				<p class="content__text--big">Jason's snow adventures</p>
+				<p class="content__text--normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a href="#readmore" class="content__text--readmore">Read More</a>
+			</div>
+	</div>
+	<div class="content__flex">
+		<div class="content__text">
+				<p class="content__text--caption">WINTER</p>
+				<p class="content__text--big">Jason's snow adventures</p>
+				<p class="content__text--normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a href="#readmore" class="content__text--readmore">Read More</a>
+			</div>
+
+		<img class="content__image--flex" src="images/6.jpg">
+	</div>
+
+	<div class="content__flex">
+		<img class="content__image--flex" src="images/7.jpg">
+		<div class="content__text">
+				<p class="content__text--caption">WINTER</p>
+				<p class="content__text--big">Jason's snow adventures</p>
+				<p class="content__text--normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a href="#readmore" class="content__text--readmore">Read More</a>
+			</div>
+	</div>
+	<div class="button__viewmore">
+		<button class="button__viewmore--radius">View More</button>
+	</div>
+
+	<div class="footer__content">
+		<a href="index.html" class="footer__item footer__item--left"><h3>The Explorer</h3></a>
+		<div class="footer__items">
+			<a href="#1" class="footer__item--right"><h5>exploration</h5></a>
+			<a href="#2" class="footer__item--right"><h5>community</h5></a>
+			<a href="#3" class="footer__item--right"><h5>about us</h5></a>
+			<a href="#4" class="footer__item--right"><h5>contact us</h5></a>
+		</div>
+	</div>
 </body>
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("nav__images");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+</script>
+
 </html>
+
