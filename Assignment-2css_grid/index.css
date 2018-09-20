@@ -64,21 +64,6 @@
 	    font-weight: 15px;
 
 	}
-	.content__flex{
-		margin-bottom: 20px;
-		position: relative;
-		display: flex;
-		width: calc(100% - 200px);
-		left: 100px
-	}
-	.content__flex:hover{
-		box-shadow: 5px 10px 8px #888888;
-	}
-
-	.content__text{	
-		max-width: 50%;
-		margin-bottom: 20px;
-	}
 
 	.grid__image{
 		height: 100%;
@@ -92,13 +77,13 @@
 		width: calc(100% - 200px);
 		left: 100px;
 		margin-bottom: 50px;
+		grid-column-gap: 10px;
+	}
+
+	.grid__content:hover{
+		box-shadow: 5px 10px 8px #888888;
 	}
 	/* Modifiers ********************************************************/
-
-	.content__image--flex{
-		flex: 1;
-		width: 50%;
-	}
 
 	.button__viewmore--radius{
 		border-radius: 20px;
