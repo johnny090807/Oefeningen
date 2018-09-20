@@ -79,12 +79,24 @@
 		max-width: 50%;
 		margin-bottom: 20px;
 	}
-	
+
+	.grid__image{
+		height: 100%;
+		width: 100%;
+	}
+
+	.grid__content{
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: calc(100% - 200px);
+		left: 100px;
+		margin-bottom: 50px;
+	}
 	/* Modifiers ********************************************************/
 
 	.content__image--flex{
 		flex: 1;
-		max-height: 400px;
 		width: 50%;
 	}
 
