@@ -83,6 +83,8 @@
   		font-weight: bold;
 		text-decoration: none; 
 		color: black;
+		list-style-type:none;
+
 	}
 	.list__item:hover{
 		background-color: grey; 
@@ -93,7 +95,7 @@
 		padding-bottom: 100px;
 	}
 
-	.main__hexagon{
+	.main__image{
 		padding-top: 100px;
 		height: 50px;
 	}
