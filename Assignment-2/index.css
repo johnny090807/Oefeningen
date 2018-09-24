@@ -17,9 +17,12 @@
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 12px;
 	}
-	.main{ 
-		padding-top: 30px;
+	.main{
 		color: grey;
+		padding-top: 30px;
+	}
+	.content{
+		padding-top: 30px;
 	}
 	/* Elements *********************************************************/
 	
@@ -90,34 +93,8 @@
 		margin-bottom: 50px;
 
 	}
-	.content__flex{
-		position: relative;
-		display: flex;
-		flex-wrap: nowrap;
-		width: calc(100% - 100px);
-		left: 50px;
-		margin-bottom: 100px;
-
-	}
-	@media only screen and (min-width: 770) {
-		.content__flex{
-			flex-wrap: wrap;
-		}
-	}
-
-
-	.content__flex:hover{
-		box-shadow: 5px 10px 8px #888888;
-	}
 	/* Modifiers ********************************************************/
 
-	.content__flex--text{
-		flex: 1 0 200px;
-		margin-left: 10px;
-	}
-	.content__flex--image{
-		flex: 1 0 200px;
-	}
 	.button__viewmore--radius{
 		border-radius: 20px;
 	    border: none;
