@@ -1,0 +1,22 @@
+#main{
+	position: relative;
+	display:grid;
+  	grid-template-columns: 1fr 1fr;
+  	width: calc(100% - 200px);
+  	left: 100px;
+}
+.name{
+	grid-column: 2;
+}
+#search{
+	width: 100%;
+}
+input{
+	left: 100px;
+	position: relative;
+	width: calc(70%);
+	background: url("search.png")  no-repeat scroll 7px 7px;
+	padding-left: 40px; 
+	margin-bottom: 30px;
+	height: 35px;
+}
