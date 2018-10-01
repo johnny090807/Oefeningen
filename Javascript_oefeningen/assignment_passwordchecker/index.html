@@ -1,60 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Javascript | Calendar</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body onload="closeNav(); getNotificationArray()">
-  		<header class="header">
-  			<span class="header__image">
-  				<img class="header__image--folder" src="assets/folder.png">
-  			</span>
-  			<select class="header__select" id="header__select" onchange="sortOn()">
-  				<option>All</option>
-  				<option disabled>---------------</option>
-  				<option>Created</option>
-  				<option>Name</option>
-  			</select>
-  			<span class="header__image" onclick="refreshPage()">
-  				<img class="header__image--refresh" src="assets/refresh-arrow.png">
-  			</span>
+<head>
+  <title>Javascript | Password-checker</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="login" >
+    <p>Username:</p>
+    <input type="text" class="login__input" id="login__username" name="username" placeholder="Username"><br/>
+    <p>Password:</p>
+    <input type="password" class="login__input" id="login__password" name="password1" placeholder="Password"><br/>
 
-  			<button onclick="activateDropDown()" class="header__dropdownbtn"><img class="header__image--menu" src="assets/menu.png"></button>
+    <p><input type="submit" class="login__button" onclick="checkForm()"/></p>
 
-  			<div id="header__dropdown" class="header__dropdown">
-  				Toggle darkmode:
-  				<input type="checkbox" class="header__dropdown--checkbox" onclick="darkModeToggle()" />
-  			</div>
-  		</header>
-	
-	    <div class="main" id="main">
-    	</div> 
+  </div ><br/>
 
-
-    	<span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">
-	&#43;</span>
-		<div id="sideNav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-			<form>
-				<h3>What do you want to do?</h3>
-        To do:
-				<input type="text" id="todo_description" placeholder="To do" name="todo_description"><br/><br/>
-
-        <p>Add notification:</p>
-        <input type="checkbox" id="todo_notificationbtn" onclick="addNotification()"><br/><br/>
-
-        <p>Notification:</p>
-        <input type="date" id="todo_notification" style="display: none;" name="todo_notification" placeholder="Notification">
-
-        <input type="time" id="todo_notificationTime" style="display: none;" name="todo_notificationTime"><br/><br/>
-
-        <button onclick="addNote()">Add</button>
-        <button onclick="closeNav()" type="button">Cancel</button>
-			</form>
-			
-			</div>  
-
-    <script type="text/javascript" src="application.js"></script>
-  </body>
+    Minimal Requirements:
+  <ul class="requirements__list">
+    <li class="requirement__listitem">Min. 8 characters</li>
+    <li class="requirement__listitem">Min. 1 special character</li>
+    <li class="requirement__listitem">Min. 2 number</li>
+    <li class="requirement__listitem">Min. 1 uppercase</li>
+    <li class="requirement__listitem">Min. 1 lowercase</li>
+  </ul>
+  <script type="text/javascript" src="application.js"></script>
+</body>
 </html>
