@@ -29,11 +29,5 @@ body {
 .login ::placeholder {
   color: #99e1d9;
 }
-.login__errormsg {
-  color: #ff4e32;
-}
-.login__successmsg {
-  color: lightgreen;
-}
 
 /*# sourceMappingURL=main.css.map */

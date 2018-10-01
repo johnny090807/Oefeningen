@@ -34,4 +34,10 @@ body{
     ::placeholder{
         color: $color4;
     }
+    &__errormsg{
+        color:#ff4e32;
+    }
+    &__successmsg{
+        color: lightgreen;
+    }
 }
