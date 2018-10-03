@@ -1,0 +1,33 @@
+body{
+	font-family: helvetica;
+}
+.name{
+	grid-column: 2;
+}
+#search{
+	width: 100%;
+}
+input{
+	left: 100px;
+	position: relative;
+	width: calc(70%);
+	background: url("../assets/search.png")  no-repeat scroll 7px 7px;
+	padding-left: 40px; 
+	margin-bottom: 30px;
+	height: 35px;
+}
+.usersholder{
+	position: relative;
+	display:grid;
+  	grid-template-columns: 1fr 1fr;
+  	width: calc(100% - 200px);
+  	left: 100px;
+  	margin-bottom: 30px;
+
+	&:hover{
+		box-shadow:0px 10px 10px #333333;
+	}
+}
+.userholder{
+	text-align: center;
+}
