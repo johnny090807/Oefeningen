@@ -60,9 +60,19 @@ function getDetail(user){
 			fillUser(element);
 		}
 	});
+	let search = document.getElementById("search");
+	search.innerHTML= "";
 }
 function closeDetail(){
+	let search = document.getElementById("search");
+
 	let main_div = document.getElementById("main");
 	main_div.innerHTML = "";
 	fillDiv(allUsers);
+	let searchDiv = document.getElementById("search");
+	const template = `
+		<input type="input" name="profile_search" placeholder="Search" />
+	`;
+	searchDiv.insertAdjacentHTML("beforeend", template);
+
 }
