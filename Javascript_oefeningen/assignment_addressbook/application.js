@@ -26,26 +26,25 @@ function fillDiv(users){
 }
 function fillUser(user){
 		const main_div = document.getElementById("main");
-		console.log(user);
 		let template = `
 		<div class="userholder" onclick="closeDetail()">
 		<h1>Click to go back:</h1>
 			<img src="${user.picture.large}" class="userholder__image"/>
 				<p class="name">
-				<p>${user.name.first}</p> 
-				<p>${user.name.last}</p> 
-				<p>${user.cell}</p> 
-				<p>${user.dob.age}</p> 
-				<p>${user.dob.date}</p> 
-				<p>${user.email}</p> 
-				<p>${user.gender}</p> 
-				<p>${user.id.name}${user.id.value}</p> 
-				<p>${user.location.city}</p> 
-				<p>${user.location.state}</p> 
-				<p>${user.location.street}</p> 
-				<p>${user.login.username}</p> 
-				<p>${user.login.password}</p> 
-				<p>${user.registered.date}</p> 
+				<p>Firstname:   	${user.name.first}</p> 
+				<p>Lastname:   		${user.name.last}</p> 
+				<p>Cellphone:   	${user.cell}</p> 
+				<p>Age:    			${user.dob.age}</p> 
+				<p>Dob:   			${user.dob.date}</p> 
+				<p>Email:   		${user.email}</p> 
+				<p>Gender: 			${user.gender}</p> 
+				<p>ID: 				${user.id.name} ${user.id.value}</p> 
+				<p>City: 			${user.location.city}</p> 
+				<p>State: 			${user.location.state}</p> 
+				<p>Street: 			${user.location.street}</p> 
+				<p>Username: 		${user.login.username}</p> 
+				<p>Password: 		${user.login.password}</p> 
+				<p>Date made: 		${user.registered.date}</p> 
 			</p>
 		</div>
 		`
