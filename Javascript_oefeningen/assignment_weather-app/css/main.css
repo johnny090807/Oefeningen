@@ -1,33 +1,44 @@
 body {
-  background-color: #99e1d9;
-  font-family: "Lato", sans-serif;
-  margin-top: 10px;
+  font-family: Verdana;
+  margin: 0;
 }
 
-.login {
-  color: #fcfcfc;
-  position: relative;
+.tempholder {
+  color: #DB6330;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+}
+.tempholder__temp--min {
+  margin-right: 40px;
+}
+.tempholder__temp--max {
+  margin-left: 40px;
+}
+
+.dayholder {
+  color: #C5C5C5;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.weather {
+  color: #DB6330;
   text-align: center;
-  width: calc(100% - 200px);
-  left: 100px;
-  background-color: #5d576b;
-  padding: 30px 0 50px 0;
-  border-radius: 30px;
+  position: relative;
+  box-shadow: 0px 0px 20px #EEEEEE;
 }
-.login__button {
-  background-color: #fffae3;
-  border: none;
+
+.main {
+  width: 100%;
 }
-.login__input {
-  font-size: 20px;
-  outline: none;
-  color: #99e1d9;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #99e1d9;
-}
-.login ::placeholder {
-  color: #99e1d9;
+
+.search {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
