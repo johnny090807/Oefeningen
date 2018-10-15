@@ -1,0 +1,43 @@
+
+$color1: rgba(252, 252, 252, 1);
+$color2: rgba(247, 86, 124, 1);
+$color3: rgba(255, 250, 227, 1);
+$color4: rgba(153, 225, 217, 1);
+$color5: rgba(93, 87, 107, 1);
+
+body{
+    background-color: $color4;
+    font-family: "Lato", sans-serif;
+    margin-top:10px;
+}
+.login{
+    color: $color1;
+    position: relative;
+    text-align: center;
+    width: calc(100% - 200px);
+    left:100px;
+    background-color: $color5;
+    padding: 30px 0 50px 0;
+    border-radius: 30px;
+    &__button{
+        background-color: $color3;
+        border: none;
+    }
+    &__input{
+        font-size: 20px;
+        outline: none;
+        color:$color4;
+        background-color: transparent;
+        border:none;
+        border-bottom: 2px solid $color4;
+    }
+    ::placeholder{
+        color: $color4;
+    }
+    &__errormsg{
+        color:#ff4e32;
+    }
+    &__successmsg{
+        color: lightgreen;
+    }
+}

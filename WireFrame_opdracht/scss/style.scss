@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+body{
+	background: url('../assets/background-image.jpg') no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+.card {
+    margin: 0 auto; 
+	margin-top: 50px;
+    float: none; 
+    margin-bottom: 10px; 
+}
